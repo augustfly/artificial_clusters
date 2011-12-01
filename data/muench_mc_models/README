@@ -1,0 +1,30 @@
+
+Realizations of artificial clusters from the Monte Carlo Code of 
+Muench et al 2000.
+
+Files         SFR   MinAge  MaxAge  IMF     f_bin    M_R  N_stars
+--            --    --      --      --      --       --   --
+trap_1Myr.dat Const 0.80    1.2     Trap    0.5      10   1e4
+
+
+Notes:
+    - Age in Myr. SFR names:
+        : Const:  Constant SFR in linear age units
+
+    - IMF Names:
+          : Trap:  Muench et al 2002 3 power law IMF
+
+    - Binaries:
+      Every A/B binary pair corresponds to a system binary
+      fraciton of f_bin. One could simply use all the stars
+      as singles without worrying about the pairings.
+
+    - All distances are DM=0.
+
+    - All M/L relations are Bernasconi/Maedar + DM 1997.
+
+    - M_R, N_star are:
+        M_R:  Number of independent realizations
+        N_stars:  Number of stars per realization.
+
+        So a file of 10 M_R and 1e4 N_stars has 1e5 objects in it.
